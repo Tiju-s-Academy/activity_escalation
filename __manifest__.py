@@ -6,6 +6,7 @@
     'author': 'Your Name',
     'depends': ['base', 'mail'],
     'data': [
+        'data/base_data.xml',  # Add this line before security
         'security/ir.model.access.csv',
         'views/activity_escalation_views.xml',
         'views/activity_escalation_config_views.xml',
