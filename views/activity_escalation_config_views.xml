@@ -1,0 +1,32 @@
+<odoo>
+    <record id="view_activity_escalation_config_form" model="ir.ui.view">
+        <field name="name">activity.escalation.config.form</field>
+        <field name="model">activity.escalation.config</field>
+        <field name="arch" type="xml">
+            <form string="Activity Escalation Configuration">
+                <group>
+                    <field name="timespan"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_activity_escalation_config_tree" model="ir.ui.view">
+        <field name="name">activity.escalation.config.tree</field>
+        <field name="model">activity.escalation.config</field>
+        <field name="arch" type="xml">
+            <tree string="Activity Escalation Configuration">
+                <field name="timespan"/>
+            </tree>
+        </field>
+    </record>
+
+    <menuitem id="menu_activity_escalation_config" name="Activity Escalation Config"
+              parent="base.menu_custom" action="action_activity_escalation_config"/>
+
+    <record id="action_activity_escalation_config" model="ir.actions.act_window">
+        <field name="name">Activity Escalation Config</field>
+        <field name="res_model">activity.escalation.config</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
