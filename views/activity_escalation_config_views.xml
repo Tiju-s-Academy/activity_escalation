@@ -21,12 +21,12 @@
         </field>
     </record>
 
-    <menuitem id="menu_activity_escalation_config" name="Activity Escalation Config"
-              parent="base.menu_custom" action="action_activity_escalation_config"/>
-
     <record id="action_activity_escalation_config" model="ir.actions.act_window">
         <field name="name">Activity Escalation Config</field>
         <field name="res_model">activity.escalation.config</field>
         <field name="view_mode">tree,form</field>
     </record>
+
+    <menuitem id="menu_activity_escalation_config" name="Activity Escalation Config"
+              parent="base.menu_custom" action="action_activity_escalation_config"/>
 </odoo>
