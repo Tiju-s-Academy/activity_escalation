@@ -3,8 +3,8 @@
     'version': '1.0',
     'summary': 'Escalate activities if they stay incomplete',
     'description': 'This module escalates activities if they stay incomplete and allows configuration of the timespan for escalation.',
-    'author': 'Your Name',
-    'depends': ['base', 'mail'],
+    'author': 'Anas',
+    'depends': ['base', 'mail'],  # Ensure 'mail' is listed as a dependency
     'data': [
         'security/ir.model.access.csv',
         'views/activity_escalation_views.xml',
