@@ -2,11 +2,13 @@
     <record id="view_activity_form" model="ir.ui.view">
         <field name="name">mail.activity.form</field>
         <field name="model">mail.activity</field>
-        <field name="inherit_id" ref="mail.view_activity_form_calendar"/>
+        <field name="inherit_id" ref="mail.activity_view_form"/>
         <field name="arch" type="xml">
-            <field name="date_deadline" position="after">
-                <field name="escalation_level"/>
-            </field>
+            <data>
+                <field name="activity_type_id" position="before">
+                    <field name="escalation_level"/>
+                </field>
+            </data>
         </field>
     </record>
 </odoo>
