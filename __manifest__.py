@@ -6,7 +6,6 @@
     'author': 'Your Name',
     'depends': ['base', 'mail'],
     'data': [
-        'security/security.xml',
         'security/ir.model.access.csv',
         'views/activity_escalation_views.xml',
         'views/activity_escalation_config_views.xml',

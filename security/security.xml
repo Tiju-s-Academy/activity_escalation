@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <data noupdate="0">
-        <record id="model_activity_escalation_config" model="ir.model">
-            <field name="name">Activity Escalation Configuration</field>
-            <field name="model">activity.escalation.config</field>
-        </record>
-    </data>
-</odoo>
