@@ -5,7 +5,9 @@
         <field name="arch" type="xml">
             <form string="Activity Escalation Configuration">
                 <group>
-                    <field name="timespan"/>
+                    <field name="first_level_hours"/>
+                    <field name="second_level_days"/>
+                    <field name="third_level_days"/>
                 </group>
             </form>
         </field>
@@ -16,7 +18,9 @@
         <field name="model">activity.escalation.config</field>
         <field name="arch" type="xml">
             <tree string="Activity Escalation Configuration">
-                <field name="timespan"/>
+                <field name="first_level_hours"/>
+                <field name="second_level_days"/>
+                <field name="third_level_days"/>
             </tree>
         </field>
     </record>
