@@ -11,4 +11,31 @@
             </data>
         </field>
     </record>
+
+    <!-- New tree view for escalated activities -->
+    <record id="view_escalated_activity_tree" model="ir.ui.view">
+        <field name="name">mail.activity.escalated.tree</field>
+        <field name="model">mail.activity</field>
+        <field name="arch" type="xml">
+            <tree string="Escalated Activities">
+                <field name="res_name"/>
+                <field name="activity_type_id"/>
+                <field name="date_deadline"/>
+                <field name="escalation_level"/>
+                <field name="user_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action for escalated activities -->
+    <record id="action_escalated_activities" model="ir.actions.act_window">
+        <field name="name">Escalated Activities</field>
+        <field name="res_model">mail.activity</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('escalation_level', '>', 0)]</field>
+    </record>
+
+    <!-- Menu item for escalated activities -->
+    <menuitem id="menu_escalated_activities" name="Escalated Activities"
+              parent="base.menu_custom" action="action_escalated_activities"/>
 </odoo>

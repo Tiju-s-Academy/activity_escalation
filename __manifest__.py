@@ -9,6 +9,7 @@
         'security/ir.model.access.csv',
         'views/activity_escalation_views.xml',
         'views/activity_escalation_config_views.xml',
+        'views/new_view_file.xml',
         'data/activity_escalation_data.xml',
     ],
     'installable': True,
