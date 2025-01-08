@@ -33,5 +33,5 @@
 
     <menuitem id="menu_activity_escalation_config" name="Configuration"
               parent="menu_activity_escalation_root" action="action_activity_escalation_config"
-              sequence="100"/>
+              sequence="100" groups="group_activity_escalation_user"/>
 </odoo>

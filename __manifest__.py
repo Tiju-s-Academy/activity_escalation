@@ -6,6 +6,7 @@
     'author': 'Anas',
     'depends': ['base', 'mail'],
     'data': [
+        'security/activity_escalation_security.xml',
         'security/ir.model.access.csv',
         'views/activity_escalation_views.xml',
         'views/activity_escalation_config_views.xml',

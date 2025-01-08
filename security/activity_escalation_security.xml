@@ -1,0 +1,10 @@
+<odoo>
+    <data noupdate="0">
+        <!-- Security group for activity escalation -->
+        <record id="group_activity_escalation_user" model="res.groups">
+            <field name="name">Activity Escalation User</field>
+            <field name="category_id" ref="base.module_category_services"/>
+            <field name="comment">Users that can see and manage activity escalations</field>
+        </record>
+    </data>
+</odoo>
