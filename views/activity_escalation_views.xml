@@ -35,7 +35,12 @@
         <field name="domain">[('escalation_level', '>', 0)]</field>
     </record>
 
+    <!-- Parent menu -->
+    <menuitem id="menu_activity_escalation_root" 
+              name="Activity Escalation" 
+              sequence="10"/>
+
     <!-- Menu item for escalated activities -->
     <menuitem id="menu_escalated_activities" name="Escalated Activities"
-              parent="base.menu_custom" action="action_escalated_activities"/>
+              parent="menu_activity_escalation_root" action="action_escalated_activities" sequence="10"/>
 </odoo>
