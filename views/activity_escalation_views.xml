@@ -37,8 +37,9 @@
 
     <!-- Parent menu with group -->
     <menuitem id="menu_activity_escalation_root" 
-              name="Activity Escalation" 
+              name="Escalations" 
               sequence="10"
+              web_icon="activity_escalation,static/description/icon-hi.png"
               groups="group_activity_escalation_user"/>
 
     <!-- Submenu for escalated activities -->
